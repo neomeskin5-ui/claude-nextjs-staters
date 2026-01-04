@@ -15,7 +15,7 @@ import { siteConfig } from "@/lib/constants/site-config";
 
 // ThemeToggle을 클라이언트에서만 렌더링하여 hydration 에러 방지
 const ThemeToggle = dynamic(
-  () => import("@/components/features/theme/ThemeToggle").then((mod) => ({ default: mod.ThemeToggle })),
+  () => import("@/components/features/theme/ThemeToggle").then(mod => mod.ThemeToggle),
   { ssr: false }
 );
 
