@@ -4,6 +4,7 @@
  * 사용자 문의를 받는 페이지입니다.
  */
 
+import type { Metadata } from "next";
 import { Mail } from "lucide-react";
 import {
   Card,
@@ -15,6 +16,11 @@ import {
 import { Container } from "@/components/common/Container";
 import { PageHeader } from "@/components/common/PageHeader";
 import { ContactForm } from "@/components/features/forms/ContactForm";
+
+export const metadata: Metadata = {
+  title: "문의하기",
+  description: "궁금한 점이 있으시면 언제든지 연락주세요.",
+};
 
 export default function ContactPage() {
   return (

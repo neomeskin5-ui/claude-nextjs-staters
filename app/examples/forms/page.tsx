@@ -4,6 +4,7 @@
  * React Hook Form + Zod를 활용한 폼 검증 예제를 보여줍니다.
  */
 
+import type { Metadata } from "next";
 import {
   Card,
   CardContent,
@@ -14,6 +15,11 @@ import {
 import { Container } from "@/components/common/Container";
 import { PageHeader } from "@/components/common/PageHeader";
 import { ContactForm } from "@/components/features/forms/ContactForm";
+
+export const metadata: Metadata = {
+  title: "폼 예제",
+  description: "React Hook Form과 Zod를 활용한 폼 검증 예제입니다.",
+};
 
 export default function FormsExamplePage() {
   return (

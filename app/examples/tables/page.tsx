@@ -4,6 +4,7 @@
  * ShadcnUI Table 컴포넌트를 활용한 데이터 표시 예제를 보여줍니다.
  */
 
+import type { Metadata } from "next";
 import {
   Card,
   CardContent,
@@ -13,6 +14,11 @@ import {
 import { Container } from "@/components/common/Container";
 import { PageHeader } from "@/components/common/PageHeader";
 import { DataTable } from "@/components/features/data-display/DataTable";
+
+export const metadata: Metadata = {
+  title: "테이블 예제",
+  description: "ShadcnUI Table 컴포넌트를 활용한 데이터 표시 예제입니다.",
+};
 
 export default function TablesExamplePage() {
   return (

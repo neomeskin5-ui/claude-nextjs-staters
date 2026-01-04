@@ -4,10 +4,16 @@
  * 스타터킷 소개 및 기술 스택 설명 페이지입니다.
  */
 
+import type { Metadata } from "next";
 import { Container } from "@/components/common/Container";
 import { PageHeader } from "@/components/common/PageHeader";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+
+export const metadata: Metadata = {
+  title: "소개",
+  description: "Next.js 16 기반의 범용 웹 스타터킷에 대해 알아보세요.",
+};
 
 export default function AboutPage() {
   return (
